@@ -1,0 +1,664 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from picoctf.org/competitions/2024-spring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:05 GMT -->
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta name="designer" content="Ivy Shi (xiaoyus@andrew.cmu.edu)">
+<meta property="og:title" content="picoCTF - picoCTF 2024 Competition">
+<meta property="og:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="2024-spring.html">
+<meta property="og:image" content="../img/logos/picoctf-logo-og.png">
+<meta property="og:image:height" content="600px">
+<meta property="og:image:width" content="600px">
+<meta name="twitter:title" content="picoCTF - picoCTF 2024 Competition">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="2024-spring.html">
+<meta name="twitter:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University."/>
+<meta name="twitter:image" content="../img/logos/picoctf-logo-social.png" />
+<title>picoCTF - picoCTF 2024 Competition</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/main409c.css?1711550832">
+<link rel="stylesheet" href="../css/font-awesome.min409c.css?1711550832">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<script src="../js/jquery.min409c.js?1711550832"></script>
+<script src="../js/bootstrap.bundle.min409c.js?1711550832"></script>
+<script src="../js/autohide-navbar409c.js?1711550832"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93258343-2"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-93258343-2');
+</script>
+
+</head>
+<body>
+<div id="body-container" class="pb-footer">
+    
+<div class="w-100 fixed-top" id="navtop-container">
+    <div class="container" id="top-inner-container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand ml-2 ml-md-0" href="../index.html"><img alt="picoCTF logo" src="../img/logos/picoctf-logo-horizontal-white.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-md-1">
+                    
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Get Started-link" href="../get_started.html"
+                             >
+                            Get Started </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="LearnDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Learn</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="LearnDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../resources.html"
+                               >
+                                Resources
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../community.html"
+                               >
+                                Community
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://primer.picoctf.org/"
+                               >
+                                Primer
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Practice-link" href="../index-2.html#picogym"
+                             >
+                            Practice </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CompeteDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Compete</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="CompeteDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://play.picoctf.org/compete"
+                               >
+                                Current and Upcoming Events
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="past.html"
+                               >
+                                Historical Competitions
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="AboutDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../about.html"
+                               >
+                                About picoCTF
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../sponsors.html"
+                               >
+                                Sponsorship
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../contact.html"
+                               >
+                                Contact Us
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                    <li class="nav-item" id="userlogin"><a aria-current="page" class="nav-link active" href="https://play.picoctf.org/login">Log In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    
+    
+    <div class="w-100 page-banner  alt-bg top-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img alt="CMU logo" class="cmu-logo mt-45" src="../img/logos/CMU-large-horizontal.png">
+                </div>
+                <div class="col-12">
+                    <h1 class="text-white text-center text-md-left"> picoCTF 2024 Competition</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-content" class="container">
+        
+                <div class="row">
+    <div class="col-md-12 mb-3 text-center">
+        <p class="text-white ">&nbsp;</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="row mt-3">
+        <div class="col">
+            <h2 class="text-center">The Competition</h2>
+            <p class="text-justify">picoCTF is the largest cybersecurity hacking competition for
+                middle, high school,
+                and college students.
+                Participants 13 years and older of all skill levels are encouraged to compete.
+                Competitors must
+                reverse-engineer, break, hack, decrypt, and think creatively and critically to solve
+                the challenges and
+                capture the digital flags.</p>
+            <p class="text-justify body-med"> Competition prizes have eligibility requirements, but
+                everyone is
+                encouraged to play for fun and learning.
+            </p>
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg mb-3" href="https://play.picoctf.org/events/73/scoreboards">View Scoreboard</a>
+                <br/>
+                <a class="btn btn-outline-primary" href="../get_started.html">User Guide</a>
+                <a class="btn btn-outline-primary" href="2024-spring-rules.html">Rules</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>The Important Dates</h2>
+        </div>
+    </div>
+    <div class="row text-center competition-dates">
+        <div class="border border-secondary">
+            <div class="text-bluish font-weight-bold mb-3">Starting now!</div>
+            <p>Sign up for an account</p>
+        </div>
+        <div class="border border-secondary">
+            <div class="text-bluish font-weight-bold mb-3">February 1 - March 19</div>
+            <p>Register for the competition</p>
+        </div>
+        <div class="border border-secondary">
+            <div class="text-bluish font-weight-bold mb-3">March 12-26 2024</div>
+            <p>Competition period</p>
+        </div>
+        <div class="border border-secondary">
+            <div class="text-bluish font-weight-bold mb-3">Mid April</div>
+            <p>US Middle/High School Winners Announced</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>Competition Categories</h2>
+        </div>
+        <div class="col-12">
+            <ul class="nav nav-tabs justify-content-center p-3" id="competition-tabs"
+                role="tablist">
+                <li class="nav-item">
+                    <a aria-controls="us" aria-selected="true" class="nav-link active"
+                       data-toggle="tab"
+                       href="#cat-us" id="comp-us" role="tab">US Middle/High School Students</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="uni" class="nav-link" data-toggle="tab"
+                       href="#cat-uni" id="comp-uni" role="tab">US Undergraduate University
+                        Students</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="jpn" class="nav-link" data-toggle="tab"
+                       href="#cat-jpn" id="comp-jpn" role="tab">Japan Middle/High School and
+                        Undergraduate Students</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="afr" class="nav-link" data-toggle="tab" href="#cat-afr"
+                       id="comp-afr" role="tab">
+                        Africa High School and Undergraduate Students</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="all" class="nav-link" data-toggle="tab" href="#cat-all"
+                       id="comp-all" role="tab">
+                        All Other Players</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container tab-content" id="competition-tabContent">
+        <div aria-labelledby="comp-us" class="tab-pane fade show active" id="cat-us"
+             role="tabpanel">
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Scoreboard Eligibility</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list ">
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be at least 13 years old<br/>
+                            <span class="small">(if under 18, have consent of parent or legal guardian to participate)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Form a team alone or with up to 4 other <b>eligible US middle/high school
+                            students</b> participants in this
+                            category</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be enrolled in a US middle or high school</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-exclamation-circle text-bluish body-xlarge"></i>
+                        <p class="body-small">Prizes and awards may have requirements. See full <a
+                                href="2024-spring-rules.html">
+                            competition rules</a> for details.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Prizes</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list">
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">1st Place Team</div>
+                        <p>$3,000 and opportunity to visit to CMU for award ceremony *</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">2nd Place Team</div>
+                        <p>$2,000 and opportunity to visit to CMU for award ceremony *</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">3rd Place Team</div>
+                        <p>$1,000 and opportunity to visit to CMU for award ceremony *</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">4th and 5th Place Teams</div>
+                        <p>TCM Security training vouchers</p>
+                    </div>
+                </div>
+                <div class="row border-secondary text-center prize-list">
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">Highest Scoring<br/>all
+                            Middle-school Team
+                        </div>
+                        <p>$500</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">Second-Highest Scoring<br/>all
+                            middle-school Team
+                        </div>
+                        <p>$300</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">Third-Highest Scoring<br/>all
+                            middle-school Team
+                        </div>
+                        <p>$150</p>
+                    </div>
+                </div>
+                <div class="text-center p-3">* Travel restrictions permitting</div>
+            </div>
+        </div>
+
+        <div aria-labelledby="comp-uni" class="tab-pane fade" id="cat-uni" role="tabpanel">
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Scoreboard Eligibility</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list ">
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be at least 13 years old<br/>
+                            <span class="small">(if under 18, have consent of parent or legal guardian to participate)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Form a team alone or with up to 4 other <b>eligible</b> participants in
+                            this category</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be enrolled in a US university undergraduate program</p>
+                    </div>
+                    <!--
+                    <div>
+                        <i class="fas fa-exclamation-circle text-bluish body-xlarge"></i>
+                        <p class="body-small">Category Prizes and awards may have requirements.
+                            See category sponsor competition rules for details.</p>
+                    </div>-->
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Prizes</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list">
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">1st Place Individual
+                            &dagger;
+                        </div>
+                        <p>TCM Security training certificate: PNPT Accelerated Camp</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">2nd Place Individual
+                            &dagger;
+                        </div>
+                        <p>TCM Security training certificate: Hacking and Defending Active
+                            Directory</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-medal text-bluish body-xlarge"></i>
+                        <div class="text-bluish font-weight-bold mb-3">4th-6th Place Individuals
+                            &dagger;
+                        </div>
+                        <p>TCM Security training certificate: Academy Training</p>
+                    </div>
+                </div>
+                <div class="text-center p-3">
+                    &dagger; Individuals eligible for this category prize must meet one of the
+                    following criteria: a) not be a member of any team, OR b) be the sole member of
+                    a team.
+                </div>
+            </div>
+        </div>
+
+
+        <div aria-labelledby="comp-afr" class="tab-pane fade" id="cat-afr" role="tabpanel">
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Scoreboard Eligibility</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list ">
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be at least 13 years old<br/>
+                            <span class="small">(if under 18, have consent of parent or legal guardian to participate)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Form a team alone or with up to 4 other <b>eligible</b> participants
+                            in this category</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Reside in the continent of Africa, enrolled in a high school or
+                            university</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-exclamation-circle text-bluish body-xlarge"></i>
+                        <p class="body-small">Category Prizes and awards may have requirements.
+                            See category sponsor competition rules for details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Prizes</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5 text-center  mb-4">
+                <h5>Competition sponsors award prizes and opportunities based on picoCTF
+                    participation.<br/>
+                    Please see the category sponsor website for prize information and full
+                    rules.</h5>
+                <div>
+                    <a href="https://www.africa.engineering.cmu.edu/research/cybersecurity/cylab/picoctf.html"
+                       target="_blank">
+                        <img alt="CyLab Africa" class="sponsor-logo-lg"
+                             src="../img/sponsor/CMU-Africa.png">
+                        <p>picoCTF-Africa</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div aria-labelledby="comp-jpn" class="tab-pane fade" id="cat-jpn" role="tabpanel">
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Scoreboard Eligibility</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <div class="row text-center prize-list ">
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be at least 13 years old<br/>
+                            <span class="small">(if under 18, have consent of parent or legal guardian to participate)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Form a team alone or with up to 4 other <b>eligible</b> participants
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be enrolled in a Japan middle school, high school, or undergraduate
+                            university</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-exclamation-circle text-bluish body-xlarge"></i>
+                        <p class="body-small">Category Prizes and awards may have requirements.
+                            See category sponsor competition rules (pending) for details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col">
+                    <h2>Prizes</h2>
+                </div>
+            </div>
+            <div class="border border-secondary pt-5 pb-4 px-5 text-center  mb-4">
+                <h5>Competition sponsors award prizes and opportunities based on picoCTF
+                    participation.<br/>
+                    Please see the category sponsor website (pending) for prize information and
+                    full rules.</h5>
+                <div>
+                    <!--                    <a href="https://cognitivehack-jp.cognitivectf.com/" target="_blank">-->
+                    <img alt="CognitiveHack Japan logo" class="sponsor-logo-lg"
+                         src="../img/sponsor/crl.png">
+                    <p>CognitiveHack Japan 2024</p>
+                    <!--                    </a>-->
+                </div>
+            </div>
+        </div>
+
+        <div aria-labelledby="comp-all" class="tab-pane fade" id="cat-all" role="tabpanel">
+            <div class="border border-secondary pt-5 pb-4 px-5  mb-4">
+                <h4>Players of all types are welcome to play for fun, learning, and bragging
+                    rights on the global
+                    scoreboard.</h4>
+                <div class="row text-center prize-list ">
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Be at least 13 years old<br/>
+                            <span class="small">(if under 18, have consent of parent or legal guardian to participate)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-check-square text-bluish body-xlarge"></i>
+                        <p>Form a team alone or with up to 4 other participants</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <p>picoCTF would like to thank our sponsors for providing the funds for continued
+                development and
+                competition awards.</p>
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+
+    <footer id="footer" class="">
+    
+    <div class="container section text-center">
+        <div class="row">
+            <div class="col" id="footer-content">
+                <div>
+                    <a href="https://cmu.edu/" target="_blank" rel="noopener"><img alt="CMU Logo" height="64" width="102" src="../img/logos/cmu.png"></a>
+                    <a href="https://ini.cmu.edu/"  target="_blank" rel="noopener"><img alt="INI Logo"  height="64" width="248" src="../img/logos/ini.png"></a>
+                    <a href="https://cylab.cmu.edu/" target="_blank" rel="noopener"><img alt="CyLab Logo"  height="64" width="114" src="../img/logos/cylab.png"></a>
+                    <a href="http://pwning.net/" target="_blank" rel="noopener"><img alt="PPP Logo"  height="64" width="64" src="../img/logos/ppp.png"></a>
+                </div>
+                <div>
+                    <a href="https://facebook.com/picoctf.competition" target="_blank" rel="noopener"><img width="50"  height="50" alt="Facebook logo" src="../img/logos/facebook.png"></a>
+                    <a href="https://twitter.com/picoctf" target="_blank" rel="noopener"><img width="50"  height="50" alt="Twitter logo"  src="../img/logos/twitter.png"></a>
+                    <a href="../discord.html" target="_blank" rel="noopener"><img width="50"  height="50" alt="Discord logo"  src="../img/logos/discord.png"></a>
+                </div>
+                <div>
+                    <h5>© Carnegie Mellon University 2024<br/>
+                        Use of this site is governed by the <a href="../privacy.html">Privacy Statement</a> and <a href="../terms.html">Terms
+                            of Service</a>.<br/>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer> <!-- footer -->
+<script src="../js/script.js"></script>
+
+</div>
+</body>
+
+<!-- Mirrored from picoctf.org/competitions/2024-spring.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:06 GMT -->
+</html>

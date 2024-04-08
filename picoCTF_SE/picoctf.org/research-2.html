@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from picoctf.org/research.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:17 GMT -->
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta name="designer" content="Ivy Shi (xiaoyus@andrew.cmu.edu)">
+<meta property="og:title" content="picoCTF - Research">
+<meta property="og:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="research-2.html">
+<meta property="og:image" content="img/logos/picoctf-logo-og.png">
+<meta property="og:image:height" content="600px">
+<meta property="og:image:width" content="600px">
+<meta name="twitter:title" content="picoCTF - Research">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="research-2.html">
+<meta name="twitter:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University."/>
+<meta name="twitter:image" content="img/logos/picoctf-logo-social.png" />
+<title>picoCTF - Research</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/mainaae0.css?1655143429">
+<link rel="stylesheet" href="css/font-awesome.minaae0.css?1655143429">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<script src="js/jquery.minaae0.js?1655143429"></script>
+<script src="js/bootstrap.bundle.minaae0.js?1655143429"></script>
+<script src="js/autohide-navbaraae0.js?1655143429"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93258343-2"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-93258343-2');
+</script>
+
+</head>
+<body>
+<div id="body-container">
+    
+<div class="w-100 fixed-top" id="navtop-container">
+    <div class="container" id="top-inner-container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand ml-2 ml-md-0" href="index.html"><img alt="picoCTF logo" src="img/logos/picoctf-logo-horizontal-white.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-md-1">
+                    
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Get Started-link" href="get_started.html"
+                             >
+                            Get Started </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="LearnDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Learn</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="LearnDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="resources.html"
+                               >
+                                Resources
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="community.html"
+                               >
+                                Community
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://primer.picoctf.org/"
+                               >
+                                Primer
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Practice-link" href="index-2.html#picogym"
+                             >
+                            Practice </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CompeteDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Compete</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="CompeteDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://play.picoctf.org/compete"
+                               >
+                                Current and Upcoming Events
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="competitions/past.html"
+                               >
+                                Historical Competitions
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="AboutDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="about.html"
+                               >
+                                About picoCTF
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="sponsors.html"
+                               >
+                                Sponsorship
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="contact.html"
+                               >
+                                Contact Us
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                    <li class="nav-item" id="userlogin"><a aria-current="page" class="nav-link active" href="https://play.picoctf.org/login">Log In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    
+    <div id="main-content" class="container pt-45">
+        <div class="row">
+            <div class="col-body">
+                <div class="col-lg-3 col-md-4 d-none d-md-block" id="toc-container">
+                    <ul class="toc-list">
+  <li class="toc-list-item"><a href="#research-vision">Research Vision</a>
+    <ul>
+      <li class="toc-list-item"><a href="#big-learning-small-challenges">Big Learning, Small Challenges</a></li>
+    </ul>
+  </li>
+  <li class="toc-list-item"><a href="#past-papers">Past Papers</a>
+    <ul>
+      <li class="toc-list-item"><a href="#pico-boo-how-to-avoid-scaring-students-away-in-a-ctf-competition-2019">pico-Boo!: How to avoid scaring students away in a CTF competition (2019)</a></li>
+      <li class="toc-list-item"><a href="#automatic-problem-generation-for-capture-the-flag-competitions-2015">Automatic Problem Generation for Capture-the-Flag Competitions (2015)</a></li>
+      <li class="toc-list-item"><a href="#picoctf-a-game-based-computer-security-competition-for-high-school-students-2014">PicoCTF: A Game-Based Computer Security Competition for High School Students (2014)</a></li>
+      <li class="toc-list-item"><a href="#picoctf-teaching-10000-high-school-students-to-hack-2013">picoCTF: Teaching 10,000 High School Students to Hack (2013)</a></li>
+      <li class="toc-list-item"><a href="#picoctf-2013---toaster-wars-when-interactive-storytelling-game-meets-the-largest-computer-security-competition-2013">picoCTF 2013 - Toaster Wars: When interactive storytelling game meets the largest computer security competition (2013)</a></li>
+    </ul>
+  </li>
+</ul>
+
+                </div>
+                <div class="col-lg-9 col-md-8" id="toc-content-source">
+                    <h1 class="mb-4"> Research </h1>
+                    <h2 id="research-vision">Research Vision</h2>
+<h3 id="big-learning-small-challenges">Big Learning, Small Challenges</h3>
+<p>If we cannot make learning cybersecurity easy, then we will make it fun. 
+Many capture-the-flag (CTF) competitions are designed by elite hackers for 
+elite hackers, but on the picoCTF team we have software engineers, system 
+admins, artists, students, teachers, administrators, new hackers, old 
+hackers and we make a competition for high school and middle school students. 
+Being so close to the Plaid Parliament of Pwning (PPP), every picoCTF 
+competition has mind-bending challenges to challenge the saltiest hacker, but 
+that’s the end of the journey for anyone prepared enough to make it that far.</p>
+
+<p>Two key aspects separate picoCTF from other CTF’s: we provide the necessary 
+tools to solve challenges to every participant &amp; we provide “on-ramp” challenges 
+in almost every category. About the first point, our website includes a 
+“web shell” that grants access to our Linux server where we have pre-installed 
+tools that participants need to analyze and solve challenges. The upshot is that 
+high school students with access to old hardware or non-traditional devices 
+(such as Chromebooks) can still participate. No preparation or installation of tools 
+is required for picoCTF. Second, about “on-ramp” challenges, our team carefully 
+crafts challenges that slowly introduce participants to using the shell, to making 
+use of extensive learning resources we provide, and to the traditional CTF 
+categories themselves, namely: binary exploitation, reversing, web exploitation, 
+forensics, cryptography. Some on-ramp challenges fall under a “general skills” 
+category which many times are computer science concepts such as number bases or 
+encodings which are crucial to understanding many other problems farther down the 
+path.</p>
+
+<p>Finally, as far as “fun”… not everyone is motivated by competition (though many 
+are). We also provide a videogame each year to provide something enthralling for 
+explorers. Participants discover problems slowly as they solve others, and the yearly 
+competition inspires collaboration between student teams. There is no way to make 
+every cybersecurity concept easy, but our multifaceted strategy for making learning 
+about cybersecurity enjoyable inspires students to work together, to learn to solve 
+seemingly intractable challenges and incidentally learn quite a bit about computers 
+and security along the way.</p>
+
+<hr />
+
+<h2 id="past-papers">Past Papers</h2>
+
+<h3 id="pico-boo-how-to-avoid-scaring-students-away-in-a-ctf-competition-2019">pico-Boo!: How to avoid scaring students away in a CTF competition (2019)</h3>
+<p><strong>Abstract:</strong>
+The lack of computer security experts poses a challenge for the
+private sector and national security. To encourage middle &amp; high school students
+to learn more about cybersecurity, picoCTF was created in 2013. picoCTF is a
+“capture the flag” computer security exercise built on top of a video game that
+teaches students technical skills such as reverse engineering, forensics,
+cryptography, and binary exploitation. The challenges are specifically designed
+to be hackable and provide a safe and legal way to explore cybersecurity. Since
+the first competition in 2013, picoCTF has grown from around 2,000 teams to
+8,000 eligible middle &amp; high school US &amp; CA teams and over 27,000 total global
+participants in the 2018 competition. Two key changes have been implemented
+since the competition’s inception to improve learning outcomes and increase
+student engagement. More introductory and intermediate difficulty problems
+were added to each category, gradually increasing in difficulty. Also, a new
+“classroom” feature was added to the competition that allows teachers to create 
+internal scoreboards and track student progress. An analysis of the results of the
+2018 competition shows that these new problems kept students engaged for more
+problems in the competition, and students with teachers who utilized the
+classrooms feature performed better than students with teachers who did not.</p>
+
+<p><a href="pdfs/FINAL_CISSE_paper.pdf">Full Paper</a></p>
+
+<hr />
+
+<h3 id="automatic-problem-generation-for-capture-the-flag-competitions-2015">Automatic Problem Generation for Capture-the-Flag Competitions (2015)</h3>
+<p><strong>Abstract:</strong>
+Computer security games, especially capture-the-flag (CTF) competitions, are growing 
+in popularity. A typical CTF contest presents users with a set of hacking challenges, 
+where correct solutions reveal a text “flag” that can be submitted to a scoring server. 
+In traditional CTF architectures, the problem and the flag are the same across the competition.</p>
+
+<p>In this paper we discuss automatic problem generation (APG), where a given challenge is 
+not fixed, but rather can have many different automatically generated problem instances. 
+APG offers players a unique competition experience and can facilitate deliberate practice 
+where problems vary just enough to make sure a user can replicate the solution idea. APG 
+also allows competition administrators the ability to detect when users submit a copied flag 
+from another user to the scoring server. In 2014 we ran a large-scale CTF competition called 
+PicoCTF, where we measured the prevalence of flag sharing. Our results indicate that about 0.8% 
+of flags submitted to AGP problems were copied, with 14% of teams submitting at least one shared 
+flag. In 68% of flag sharing cases, teams went on to eventually solve the problem on their own.</p>
+
+<p><a href="https://www.usenix.org/conference/3gse15/summit-program/presentation/burket" target="_blank">Full Report</a></p>
+
+<hr />
+
+<h3 id="picoctf-a-game-based-computer-security-competition-for-high-school-students-2014">PicoCTF: A Game-Based Computer Security Competition for High School Students (2014)</h3>
+<p><strong>Abstract:</strong>
+The shortage of computer security experts is a critical problem. To encourage greater computer science 
+interest among high school students, we designed and hosted a computer security competition called PicoCTF. 
+Unlike existing competitions, PicoCTF focused primarily on offense and presented challenges in the form of a 
+web-based game. Approximately 2,000 teams participated, with students playing for an average of 12 hours. We 
+present the game-based competition design, an evaluation based on survey responses and website interaction 
+statistics, and insights into the students who played. Further we have released our platform and challenges as 
+an open source project, which has been adapted into the curricula of 40 high schools. Since its release in 
+August of 2013, the PicoCTF platform has been used to host six other capture-the-flag competitions.</p>
+
+<p><a href="https://www.usenix.org/node/183444" target="_blank">Full Report</a></p>
+
+<hr />
+
+<h3 id="picoctf-teaching-10000-high-school-students-to-hack-2013">picoCTF: Teaching 10,000 High School Students to Hack (2013)</h3>
+<p><strong>Abstract:</strong>
+In the spring of 2013, two student-lead organizations, the Plaid Parliament of Pwning and
+Team Osiris, designed and hosted a computer security competition for high school students called
+picoCTF. Unlike existing competitions, picoCTF focuses primarily on offensive hacking skills
+presented in the form of a web-based video game to better excite students about computer science
+and computer security. Over the 10-day competition nearly 10,000 middle and high school
+students participated across almost 2,000 teams vying for $25,000 in prizes, making picoCTF,
+to the best of our knowledge, the largest hacking competition ever held. The competition
+introduced thousands of high school students to advanced topics such as the command-line
+interface, cryptographic ciphers, the client-server paradigm of the web, file system forensics,
+command injection, data representation, and program representation. picoCTF sets a new
+standard in scale and educational impact in pre-collegiate computer science.</p>
+
+<p><a href="pdfs/picoCTF_report_June_2013.pdf">Full Report</a></p>
+
+<hr />
+
+<h3 id="picoctf-2013---toaster-wars-when-interactive-storytelling-game-meets-the-largest-computer-security-competition-2013">picoCTF 2013 - Toaster Wars: When interactive storytelling game meets the largest computer security competition (2013)</h3>
+<p><strong>Abstract:</strong>
+Computer security competitions have become a great resource for students who are interested in computer science as a career. 
+Most of these computer security competitions, commonly known as CTFs (Capture the Flag), are presented in a Jeopardy Board 
+style of gameplay. This type of presentation only displays the problems and lacks a compelling storyline, interaction, or 
+player immersion. A team of five graduate students (dubbed Team Osiris) from Carnegie Mellon University’s Entertainment 
+Technology Center worked with Carnegie Mellon’s Hacking Club PPP to create `picoCTF,’ a computer security competition to 
+encourage U.S. middle school and high school student’s interest in computer science. It was Team Osiris responsibility to 
+add gamification to picoCTF; to push the game presentation beyond a static Jeopardy Board. Team Osiris created game design, 
+art, animation, and programming around a fun, interactive story. The result of this effort was Toaster Wars, a CTF game 
+experience. The competition took place from Apr. 26th to May 5th 2013, were almost 10,000 players participated. By adding 
+gamification to picoCTF 2013 or Toaster Wars, players had a more immersive learning and competition experience.</p>
+
+<p><a href="https://ieeexplore.ieee.org/document/6659158" target="_blank">Full Report</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="">
+    
+    <div class="container section text-center">
+        <div class="row">
+            <div class="col" id="footer-content">
+                <div>
+                    <a href="https://cmu.edu/" target="_blank" rel="noopener"><img alt="CMU Logo" height="64" width="102" src="img/logos/cmu.png"></a>
+                    <a href="https://ini.cmu.edu/"  target="_blank" rel="noopener"><img alt="INI Logo"  height="64" width="248" src="img/logos/ini.png"></a>
+                    <a href="https://cylab.cmu.edu/" target="_blank" rel="noopener"><img alt="CyLab Logo"  height="64" width="114" src="img/logos/cylab.png"></a>
+                    <a href="http://pwning.net/" target="_blank" rel="noopener"><img alt="PPP Logo"  height="64" width="64" src="img/logos/ppp.png"></a>
+                </div>
+                <div>
+                    <a href="https://facebook.com/picoctf.competition" target="_blank" rel="noopener"><img width="50"  height="50" alt="Facebook logo" src="img/logos/facebook.png"></a>
+                    <a href="https://twitter.com/picoctf" target="_blank" rel="noopener"><img width="50"  height="50" alt="Twitter logo"  src="img/logos/twitter.png"></a>
+                    <a href="discord.html" target="_blank" rel="noopener"><img width="50"  height="50" alt="Discord logo"  src="img/logos/discord.png"></a>
+                </div>
+                <div>
+                    <h5>© Carnegie Mellon University 2022<br/>
+                        Use of this site is governed by the <a href="privacy.html">Privacy Statement</a> and <a href="terms.html">Terms
+                            of Service</a>.<br/>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer> <!-- footer -->
+<script src="js/script.js"></script>
+
+</div>
+</body>
+
+<!-- Mirrored from picoctf.org/research.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:19 GMT -->
+</html>

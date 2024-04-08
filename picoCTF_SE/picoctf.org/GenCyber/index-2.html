@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from picoctf.org/GenCyber/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:19 GMT -->
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta name="designer" content="Ivy Shi (xiaoyus@andrew.cmu.edu)">
+<meta property="og:title" content="picoCTF - NSA GenCyber">
+<meta property="og:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="index-2.html">
+<meta property="og:image" content="../img/logos/picoctf-logo-og.png">
+<meta property="og:image:height" content="600px">
+<meta property="og:image:width" content="600px">
+<meta name="twitter:title" content="picoCTF - NSA GenCyber">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="index-2.html">
+<meta name="twitter:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University."/>
+<meta name="twitter:image" content="../img/logos/picoctf-logo-social.png" />
+<title>picoCTF - NSA GenCyber</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="../css/mainc924.css?1693357177">
+<link rel="stylesheet" href="../css/font-awesome.minc924.css?1693357177">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<script src="../js/jquery.minc924.js?1693357177"></script>
+<script src="../js/bootstrap.bundle.minc924.js?1693357177"></script>
+<script src="../js/autohide-navbarc924.js?1693357177"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93258343-2"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-93258343-2');
+</script>
+
+</head>
+<body>
+<div id="body-container" class="pb-footer">
+    
+<div class="w-100 fixed-top" id="navtop-container">
+    <div class="container" id="top-inner-container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand ml-2 ml-md-0" href="../index.html"><img alt="picoCTF logo" src="../img/logos/picoctf-logo-horizontal-white.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-md-1">
+                    
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Get Started-link" href="../get_started.html"
+                             >
+                            Get Started </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="LearnDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Learn</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="LearnDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../resources.html"
+                               >
+                                Resources
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../community.html"
+                               >
+                                Community
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://primer.picoctf.org/"
+                               >
+                                Primer
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Practice-link" href="../index-2.html#picogym"
+                             >
+                            Practice </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CompeteDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Compete</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="CompeteDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://play.picoctf.org/compete"
+                               >
+                                Current and Upcoming Events
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../competitions/past.html"
+                               >
+                                Historical Competitions
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="AboutDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../about.html"
+                               >
+                                About picoCTF
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../sponsors.html"
+                               >
+                                Sponsorship
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="../contact.html"
+                               >
+                                Contact Us
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                    <li class="nav-item" id="userlogin"><a aria-current="page" class="nav-link active" href="https://play.picoctf.org/login">Log In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    
+    
+    <div id="main-content" class="container">
+        
+        <div class="row px-45">
+            <div class="col-12">
+                
+                <div class="mt-5"></div>
+<h1 id="nsa-gencyber">NSA GenCyber</h1>
+
+<h2 id="in-person-summer-camp-for-teachers">In-Person Summer Camp for Teachers</h2>
+
+<p>Carnegie Mellon University will host a <a href="https://www.gen-cyber.com/">NSA GenCyber</a> experience for high school teachers in June 2024. Stipends are provided for teachers attending all 5 days of camp.
+The picoCTF for GenCyber Teacher Program (2024) by Carnegie Mellon University is designed for U.S. high-school computer science teachers who are interested to learn how to use online
+cybersecurity Capture-The-Flag (CTF) problems and competitions to introduce cybersecurity knowledge and skills to their students and to increase student interest in cybersecurity careers.</p>
+
+<h4 class="text-center">
+picoCTF for GenCyber Teacher Program (2024)<br />
+Camp Date: June 24, 2024 (Mon) to June 28, 2024 (Fri)<br />
+Carnegie Mellon University, Pittsburgh PA<br />
+</h4>
+
+<div class="text-center">
+  <p><a class="btn btn-primary btn-lg text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScvFnsuBHw5B4zrkhukYq8JNjCvW8B6vxmmvpFdEZqFSpZGZQ/viewform?usp=sf_link">
+Teacher Signup Form
+</a></p>
+</div>
+
+<p>The primary objectives of our program are to:</p>
+<ol>
+  <li>provide free education opportunities on cybersecurity knowledge and  skills that are typically taught at Bachelor’s/Master’s level, e.g., cross-site scripting (XSS) attacks and  their defenses, thus making our participants more likely to feel comfortable using our content in their  classrooms;</li>
+  <li>show how all six GenCyber Cybersecurity Concepts and cyber ethics manifest in the design of secure computer systems, the practice of real-world cybersecurity professionals, and the cyber-computing experience in our everyday lives;</li>
+  <li>collaborate with our K–12 Pedagogical expert and teachers to identify a set of curriculum integration points where the knowledge referenced above can be synergistically inserted into the existing high-school computer science curriculums; and</li>
+  <li>customize a set of demonstration lesson plans on how to use CTF problems and competitions to excite students to learn cybersecurity knowledge and skills and to increase their interest in cybersecurity careers.</li>
+</ol>
+
+<p><br /></p>
+
+<h2 id="online-lectures">Online Lectures</h2>
+
+<p>Lectures are recorded and posted on the <a href="https://www.youtube.com/channel/UCBieKXZv8jtS2AjvOyTpOaA">picoCTF YouTube channel</a>.</p>
+
+<p>Lectures on introductory level cybersecurity principles leveraging picoCTF content will be released monthly. Join us on Twitter for a Q&amp;A session on lecture topics.</p>
+
+<h3 id="lecture-1-general-skills-in-ctfs-part-1">Lecture 1: General Skills in CTF’s Part 1</h3>
+<p>Learn cybersecurity CTF’s concept-by-concept. In this video, we consider number bases, encodings and the Shell.</p>
+
+<h3 id="lecture-2-general-skills-in-ctfs-part-2">Lecture 2: General Skills in CTF’s Part 2</h3>
+<p>Dive deeper into the shell with common commands, power tools and daisy chaining with pipes.</p>
+
+<h3 id="lecture-3--python-in-ctfs">Lecture 3:  Python in CTF’s</h3>
+<p>Learn Python through lecture, example and challenges in the picoGym.</p>
+
+<h3 id="lecture-4-forensics-in-ctfs-part-1">Lecture 4: Forensics in CTF’s Part 1</h3>
+<p>Learn the abstract layers of a computer and how files can be viewed as hexadecimal.</p>
+
+<h3 id="lecture-5-forensics-in-ctfs-part-2">Lecture 5: Forensics in CTF’s Part 2</h3>
+<p>Learn about disk analysis, the Sleuthkit and Autopsy from this challenge author.</p>
+
+<h3 id="lecture-6-forensics-in-ctfs-part-3">Lecture 6: Forensics in CTF’s Part 3</h3>
+<p>Learn about pixels and digital steganography in this pico lecture.</p>
+
+<h3 id="lecture-7-forensics-in-ctfs-part-4">Lecture 7: Forensics in CTF’s Part 4</h3>
+<p>Learn how to start off with packet analysis and Wireshark.</p>
+
+<p><br /></p>
+
+<div class="text-center">
+  <script async="" src="../js/embed-ui.min.js"></script>
+
+  <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;" data-title="GenCyber 2023 Summer Camp" data-description="16 new items added to shared album">
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc_zeYnNoTh-eBVvU5rGWmMazL0wkrWM7RKTdsEuafj81MMf3KuzNWj9K2VOdmrFrtYuMrC1qEL59CcO_WY-JC082iCcqNx2hPYv8XQndHkdtC-reqQ=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-I5hkOsB3DP5rBZ5ht3Dfq-VFfQ8JtoE_mf-SH2VLf_jz1PuyNMPqvUkMG8c6VHwAeVGBPKpQYai3hJ7LDownP03VtPvpd5dYfkOuE92ia4m3p41Q=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc8Zj3h6aPCALNPm68yWLy2L-jKME6vfk1n3qYZOyM7DSbwXlel1S63AgNCWTgSh-hrE2iIGJQzb3M8l31HrjvpBvTkoTeQMRF6gve-uapGAz-B2X48=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-nz3rF2Gswlj_GRjJCudlIVIbLNhcS5iMjwCDvmSIJZiM1aS2oP_po7VMAYrnV0bNgwTxWR6pbEVq_zrTAqCzH_9S7RiD7DnES0ypoFXgByK46Gzs=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-p6czhLmiGGgbR1sAPY8nYkVjRhfB12cpi4V5Ld8EiKYoWgXSrLQ9H7LIbhdjCLdcT3Tv2Y_6mF4GdU0gEXWAfX830EOJolpOSOiUFKHuiqze2mu0=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc90GdznDTWiX3IY1mTwc_aM2dUVfjO_2uqeNgERjyMVoB6STmby38AGuiDS7Q7m2clMFUmXBkoB-T1NwIvDHTuKNO9Yyvd4Dpc2NfaL8AZ513zrOQ8=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc8Gw6uzumaVHE0ixIkqutsExxKb01YzvJ4jCbS3LOHOSxK5tpS8lPxKyCYV6b2VOiPozk2DSHw1ZrmE40aCpV09wu0EkmTLnGGiYeQDFslDJkpUtks=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc_ALRV_HdzzXi1w5pdv9fx1sFsrEin7enOS0CAj_7IlFZX_OcFw-TL9h_7b-_3QhBh4ib0MkVS1JzIvk52S-QRxUAPe620AMs7R2oA1m2zTy6C8o58=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-k9dQEKbmt4NbwyUgepsQzuiWF4pis6QxtxSoR8Oktm3eIq9aXlOn62r-_-5ygMA1er5PR459H8fGNcd61AavdVKJDlhI50-yNB613-IdGqVYCnzw=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc852jOcsHyEThlEkXOiZhf000yA3o-Wu4cHKKC6cfIDRUYX6v-uNIlrDaNGSy0h76sPkleSUMG-OtbDi2Kb9Gl2nK-x0Ncbvr_DPrDzVY5whV3xx1w=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-8jgTQdd1TpoXXDgK4zctmC_hroZ8XKIZch9vstdbFfi98mqJe7uZUTDt2Ym8YpOrQB8xpWATvdw-OcxSsfPzuc_S8RBbbcpTKAorv9YjwTtd1qdU=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc_CCtghScWKuFJGCLgRrOH1tA9WHI-UDHNJW9GhCOKJy9M00egzpeQ5uyebnGJ81rsve6dy7pGysioV1tALwfJpsGTuJnDl5oylSWXCC3bFPirCPhk=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc82iAH4SmTEatSV9JVV8791PwsLd0FffPecnJ56aMx2LbXm0MGJcvifaKV6QW4RPMxAOgMqrVda56wF9yOuAm0RLU9CK9adJ--so1oRcavHhRgMwl4=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc-L0oVIwBT21nL1KA6lEFmu5BYckU1xg1--3VrpjrWiwSR5Dc1hMqPiJ-dNotP2TuvnGdgbP2SO1is8R4X7Yp8yOtevJleN5WDzRKdugEUyBanpjWw=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc9ArfvLuVwPMx_A6j2lvgfAhvoqF3Juc5CTg_Mms4NaQ51IFcdq5FLDh9xu-snFU4VCGQdhurTHORaTB3BnA0Kk1ssjVHlLZXcMGZ5xDSTklpaVeQQ=w1920-h1080"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AIL4fc9ernhNOh2MjiYhqLjyhdqWHPqJYrXI26Kv8udVgdBIoWO6C1BssXn41U2o75SOJ6_I2pVHQgytvaHemZpLiYl-BsHrpRzC7bjqWAvXHQb9m7pP4N0=w1920-h1080"></object>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h2 id="contact">Contact</h2>
+<p>For more information, please email Megan Kearns at <a href="mailto:mkearns1@cmu.edu">mkearns1@cmu.edu</a>.</p>
+
+
+
+        
+            </div>
+        </div>
+        
+    </div>
+
+    <footer id="footer" class="">
+    
+    <div class="container section text-center">
+        <div class="row">
+            <div class="col" id="footer-content">
+                <div>
+                    <a href="https://cmu.edu/" target="_blank" rel="noopener"><img alt="CMU Logo" height="64" width="102" src="../img/logos/cmu.png"></a>
+                    <a href="https://ini.cmu.edu/"  target="_blank" rel="noopener"><img alt="INI Logo"  height="64" width="248" src="../img/logos/ini.png"></a>
+                    <a href="https://cylab.cmu.edu/" target="_blank" rel="noopener"><img alt="CyLab Logo"  height="64" width="114" src="../img/logos/cylab.png"></a>
+                    <a href="http://pwning.net/" target="_blank" rel="noopener"><img alt="PPP Logo"  height="64" width="64" src="../img/logos/ppp.png"></a>
+                </div>
+                <div>
+                    <a href="https://facebook.com/picoctf.competition" target="_blank" rel="noopener"><img width="50"  height="50" alt="Facebook logo" src="../img/logos/facebook.png"></a>
+                    <a href="https://twitter.com/picoctf" target="_blank" rel="noopener"><img width="50"  height="50" alt="Twitter logo"  src="../img/logos/twitter.png"></a>
+                    <a href="../discord.html" target="_blank" rel="noopener"><img width="50"  height="50" alt="Discord logo"  src="../img/logos/discord.png"></a>
+                </div>
+                <div>
+                    <h5>© Carnegie Mellon University 2023<br/>
+                        Use of this site is governed by the <a href="../privacy.html">Privacy Statement</a> and <a href="../terms.html">Terms
+                            of Service</a>.<br/>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer> <!-- footer -->
+<script src="../js/script.js"></script>
+
+</div>
+</body>
+
+<!-- Mirrored from picoctf.org/GenCyber/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:21:19 GMT -->
+</html>

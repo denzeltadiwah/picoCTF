@@ -1,0 +1,1065 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from picoctf.org/get_started.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:19:45 GMT -->
+<head>
+    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta name="designer" content="Ivy Shi (xiaoyus@andrew.cmu.edu)">
+<meta property="og:title" content="picoCTF - Getting Started with picoCTF">
+<meta property="og:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="get_started.html">
+<meta property="og:image" content="img/logos/picoctf-logo-og.png">
+<meta property="og:image:height" content="600px">
+<meta property="og:image:width" content="600px">
+<meta name="twitter:title" content="picoCTF - Getting Started with picoCTF">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="get_started.html">
+<meta name="twitter:description" content="picoCTF is a free computer security education program with original content built on a capture-the-flag framework created by security and privacy experts at Carnegie Mellon University."/>
+<meta name="twitter:image" content="img/logos/picoctf-logo-social.png" />
+<title>picoCTF - Getting Started with picoCTF</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/main824d.css?1678295806">
+<link rel="stylesheet" href="css/font-awesome.min824d.css?1678295806">
+<link rel="stylesheet" href="css/bs-stepper.min824d.css?1678295806">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<script src="js/jquery.min824d.js?1678295806"></script>
+<script src="js/bootstrap.bundle.min824d.js?1678295806"></script>
+<script src="js/autohide-navbar824d.js?1678295806"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93258343-2"></script>
+<script src="js/bs-stepper.min824d.js?1678295806"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-93258343-2');
+</script>
+
+</head>
+<body>
+<div id="body-container" class="pb-footer">
+    
+<div class="w-100 fixed-top" id="navtop-container">
+    <div class="container" id="top-inner-container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand ml-2 ml-md-0" href="index.html"><img alt="picoCTF logo" src="img/logos/picoctf-logo-horizontal-white.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-md-1">
+                    
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Get Started-link" href="get_started.html"
+                             >
+                            Get Started </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="LearnDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Learn</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="LearnDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="resources.html"
+                               >
+                                Resources
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="community.html"
+                               >
+                                Community
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://primer.picoctf.org/"
+                               >
+                                Primer
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" id="Practice-link" href="index-2.html#picogym"
+                             >
+                            Practice </a>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="CompeteDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Compete</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="CompeteDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="https://play.picoctf.org/compete"
+                               >
+                                Current and Upcoming Events
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="competitions/past.html"
+                               >
+                                Historical Competitions
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="AboutDropLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+                        <div class="dropdown-menu text-md-left text-center" aria-labelledby="AboutDropLink">
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="about.html"
+                               >
+                                About picoCTF
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="sponsors.html"
+                               >
+                                Sponsorship
+                                
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            
+                            
+                            
+                            <a class="dropdown-item"
+                               href="contact.html"
+                               >
+                                Contact Us
+                                
+                            </a>
+                            
+                            
+                        </div>
+                    </li>
+                        
+                    
+                    <li class="nav-item" id="userlogin"><a aria-current="page" class="nav-link active" href="https://play.picoctf.org/login">Log In</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    
+    
+    <div class="w-100 page-banner  alt-bg top-bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img alt="CMU logo" class="cmu-logo mt-45" src="img/logos/CMU-large-horizontal.png">
+                </div>
+                <div class="col-12">
+                    <h1 class="text-white text-center text-md-left"> Getting Started with picoCTF</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-content" class="container">
+        
+                <div class="row">
+    <div class="col-md-12 mb-3 text-center">
+        <p class="text-white ">Whether a learner or a teacher, in K-12, college or industry, picoCTF makes cybersecurity
+            education fun and engaging</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="row mt-3">
+        <div class="col text-center">
+            <ul class="nav nav-tabs justify-content-center" id="competition-tabs" role="tablist">
+                <li class="nav-item">
+                    <a aria-controls="guide" aria-selected="true" class="nav-link active" data-toggle="tab"
+                       href="#nav-guide" id="guide-tab" role="tab">User Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="faq" aria-selected="false" class="nav-link" data-toggle="tab" href="#nav-faq"
+                       id="faq-tab" role="tab">FAQ</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="competition-tabContent">
+                <div aria-labelledby="nav-guide-tab" class="tab-pane fade show active" id="nav-guide" role="tabpanel">
+                    <div class="section">
+                        <div class="text-center mb-5 pb-5">
+                            <h2 class="text-bluish font-weight-bold mb-45">I am a:</h2>
+                            <ul class="nav nav-pills justify-content-center text-center body-xlarge" id="guide-tabs"
+                                role="tablist">
+                                <li class="nav-item">
+                                    <a aria-controls="intro" aria-selected="true" class="nav-link active"
+                                       data-toggle="tab" href="#guide-learner" id="guide-learner-tab"
+                                       onclick="document.getElementById('start-steps').scrollIntoView({behavior:'smooth'})"
+                                       role="tab">
+                                        <svg enable-background="new 0 0 100 100" fill="currentColor " height='100px'
+                                             version="1.1"
+                                             viewBox="0 0 100 100" width='100px' x="0px" xml:space="preserve"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             y="0px"><g><path d="M56.548,43.709c-1.119,1.104-2.364,1.978-3.691,2.503c-0.9,0.358-1.841,0.556-2.807,0.556   c-0.967,0-1.907-0.197-2.808-0.556c-1.339-0.531-2.594-1.417-3.723-2.534h-0.001c0,1.376-1.051,2.161-1.764,2.534   c-0.085,0.045-0.166,0.083-0.238,0.117c-0.179,0.08-0.314,0.129-0.373,0.148c0.042,0.354,0.199,0.694,0.45,1.016   c1.181,1.509,4.498,3.689,8.407,3.689s7.226-2.18,8.407-3.689c0.252-0.322,0.408-0.662,0.45-1.016   c0.002-0.011,0.002-0.021,0.001-0.03c-0.48-0.177-2.261-0.955-2.289-2.729C56.563,43.717,56.556,43.713,56.548,43.709z" fill="none"></path><path
+                                                d="M28.108,90.208H71.89c1.634,0,2.956-1.309,2.956-2.922l5.97-27.247c0-1.612-1.324-2.922-2.955-2.922h-2.411   h-1.13h-0.566H26.245H22.14c-1.633,0-2.957,1.309-2.957,2.922l5.97,27.247C25.153,88.899,26.476,90.208,28.108,90.208z M50,72.339   c0.877,0,1.587,0.71,1.587,1.586c0,0.877-0.71,1.587-1.587,1.587c-0.876,0-1.587-0.71-1.587-1.587   C48.413,73.049,49.124,72.339,50,72.339z"
+                                                fill="none"></path><path
+                                                d="M40.088,35.436c0.19,0.191,0.389,0.286,0.578,0.252c0.09-0.016,0.174-0.061,0.249-0.131   c0.912,2.837,2.653,5.665,4.851,7.372c1.295,1.007,2.749,1.624,4.286,1.624c1.525,0,2.972-0.61,4.26-1.605   c2.208-1.704,3.96-4.542,4.875-7.39c0.075,0.07,0.158,0.115,0.248,0.131c0.164,0.029,0.334-0.037,0.499-0.178   c0.416-0.352,0.807-1.175,0.984-2.175c0.234-1.304,0.025-2.447-0.465-2.676c-0.036-0.017-0.072-0.03-0.112-0.037l-1.114,1.074   L45.5,24.63c-4.489-0.416-5.201,5.58-5.256,6.115c-0.003,0.023-0.003,0.037-0.003,0.038h-0.001   c-0.159-0.129-0.322-0.188-0.478-0.162c-0.068,0.012-0.132,0.041-0.191,0.083c-0.434,0.311-0.608,1.398-0.389,2.629   C39.35,34.271,39.702,35.051,40.088,35.436z"
+                                                fill="none"></path><circle
+                                                cx="50" cy="73.925" r="1.586"></circle><path
+                                                d="M74.869,91.446H25.131c-0.701,0-1.268,0.572-1.268,1.277S24.43,94,25.131,94h49.738c0.7,0,1.266-0.573,1.266-1.278   C76.134,92.019,75.567,91.446,74.869,91.446z"></path><path
+                                                d="M27.839,90.69h44.32c1.648,0,2.985-1.335,2.985-2.984l5.969-28.088c0-1.647-1.336-2.983-2.985-2.983H75.52h-1.269h-0.646   c-2.747-8.873-7.61-9.194-8.67-9.442c-0.126-0.029-0.253-0.056-0.381-0.081c-3.278-3.029-1.041-15.678-1.041-15.678   c0-4.033-0.575-7.129-1.479-9.52l-0.425-4.27l1.42-0.822l0.721-0.416l3.012-1.744c0.188-0.189,0.188-0.493,0-0.681L50.745,7.316   c-0.189-0.188-0.494-0.188-0.682,0l-16.019,6.666c-0.188,0.188-0.188,0.492,0,0.681l1.194,0.69l-0.076,1.054   c-0.41,0.07-0.723,0.425-0.723,0.855c0,0.387,0.253,0.715,0.603,0.826l-0.699,9.786l0.965,2.894l0.965-2.894l-0.699-9.786   c0.35-0.113,0.602-0.439,0.602-0.826c0-0.43-0.313-0.785-0.722-0.855l-0.069-0.97l1.671,0.969l0.068,0.038l1.326,0.769   l-0.337,4.304c-0.99,2.44-1.627,5.662-1.627,9.917c0,0,2.238,12.648-1.041,15.678c-0.129,0.025-0.255,0.052-0.38,0.081   c-1.062,0.248-5.923,0.569-8.671,9.442H21.87c-1.648,0-2.984,1.336-2.984,2.983l5.969,28.089   C24.854,89.355,26.19,90.69,27.839,90.69z M39.571,30.705c0.059-0.042,0.123-0.071,0.191-0.083   c0.156-0.027,0.318,0.033,0.478,0.162h0.001c0-0.001,0-0.015,0.003-0.038c0.055-0.535,0.767-6.531,5.256-6.115l13.726,7.066   l1.114-1.074c0.04,0.007,0.076,0.02,0.112,0.037c0.49,0.229,0.699,1.372,0.465,2.676c-0.178,1-0.568,1.824-0.984,2.175   c-0.165,0.141-0.335,0.207-0.499,0.178c-0.09-0.016-0.173-0.061-0.248-0.131c-0.915,2.848-2.667,5.686-4.875,7.39   c-1.288,0.996-2.734,1.605-4.26,1.605c-1.537,0-2.991-0.617-4.286-1.624c-2.198-1.707-3.938-4.534-4.851-7.372   c-0.075,0.07-0.158,0.115-0.249,0.131c-0.189,0.033-0.388-0.061-0.578-0.252c-0.386-0.385-0.738-1.165-0.906-2.101   C38.963,32.104,39.137,31.016,39.571,30.705z M58.858,46.449c0.001,0.009,0.001,0.019-0.001,0.03   c-0.042,0.354-0.198,0.694-0.45,1.016c-1.182,1.509-4.498,3.689-8.407,3.689s-7.227-2.18-8.407-3.689   c-0.251-0.322-0.408-0.662-0.45-1.016c0.059-0.02,0.194-0.069,0.373-0.148c0.073-0.034,0.153-0.072,0.238-0.117   c0.713-0.373,1.764-1.158,1.764-2.534h0.001c1.129,1.117,2.383,2.002,3.723,2.534c0.901,0.359,1.841,0.556,2.808,0.556   c0.966,0,1.906-0.198,2.807-0.556c1.327-0.526,2.572-1.399,3.691-2.503c0.008,0.004,0.016,0.007,0.021,0.011   C56.598,45.494,58.378,46.271,58.858,46.449z M22.14,57.117h4.105h47.508h0.566h1.13h2.411c1.631,0,2.955,1.31,2.955,2.922   l-5.97,27.247c0,1.613-1.322,2.922-2.956,2.922H28.108c-1.633,0-2.956-1.309-2.956-2.922l-5.97-27.247   C19.183,58.426,20.507,57.117,22.14,57.117z"></path></g></svg>
+                                        <br/>
+                                        Learner
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a aria-controls="guide" aria-selected="false" class="nav-link" data-toggle="tab"
+                                       href="#guide-teacher" id="guide-teacher-tab"
+                                       onclick="document.getElementById('start-steps').scrollIntoView(({behavior:'smooth'}))"
+                                       role="tab">
+                                        <svg fill="currentColor " height='100px' viewBox="0 0 32 32"
+                                             width='100px' x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                            <g data-name="11">
+                                                <path d="M27.79,20.86a4,4,0,1,0-5.58,0A4.89,4.89,0,0,0,20.42,23l-6.71-6.72a1,1,0,0,0-1.42,1.42L20,25.41V27a3,3,0,0,0,3,3h4a3,3,0,0,0,3-3V25A5,5,0,0,0,27.79,20.86ZM23,18a2,2,0,1,1,2,2A2,2,0,0,1,23,18Zm5,9a1,1,0,0,1-1,1H23a1,1,0,0,1-1-1V25a3,3,0,0,1,6,0Z"></path>
+                                                <path d="M10.08,19H6V4H26v7a1,1,0,0,0,2,0V4h1a1,1,0,0,0,0-2H3A1,1,0,0,0,3,4H4V19H3a1,1,0,0,0,0,2h7.08a1,1,0,0,0,0-2Z"></path>
+                                                <path d="M13,10.79A1,1,0,1,0,12.21,12,1,1,0,0,0,13,10.79Z"></path>
+                                                <path d="M15.79,10a1,1,0,1,0,1.19.77A1,1,0,0,0,15.79,10Z"></path>
+                                                <path d="M19.79,10a1,1,0,1,0,1.19.77A1,1,0,0,0,19.79,10Z"></path>
+                                            </g>
+                                        </svg>
+                                        <br/>
+                                        Teacher</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a id="start-steps"></a>
+                        <div class="tab-content" id="nav-guide-tabContent">
+                            <div aria-labelledby="nav-learner-tab" class="tab-pane fade show active" id="guide-learner"
+                                 role="tabpanel">
+                                <div class="bs-stepper text-left">
+                                    <div class="bs-stepper-header mb-3" role="tablist">
+                                        <!-- your steps here -->
+                                        <div class="step" data-target="#learner-register-part">
+                                            <button aria-controls="learner-register" class="step-trigger"
+                                                    id="learner-register-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">1</span>
+                                                <span class="bs-stepper-label">Get Started</span>
+                                            </button>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="step" data-target="#learner-practice-part">
+                                            <button aria-controls="learner-practice" class="step-trigger"
+                                                    id="learner-practice-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">2</span>
+                                                <span class="bs-stepper-label">Learn and Practice</span>
+                                            </button>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="step" data-target="#learner-compete-part">
+                                            <button aria-controls="learner-compete-part" class="step-trigger"
+                                                    id="learner-compete-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">3</span>
+                                                <span class="bs-stepper-label">Compete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="bs-stepper-content">
+                                        <!-- your steps content here -->
+                                        <div aria-labelledby="learner-compete-part-trigger" class="content"
+                                             id="learner-register-part" role="tabpanel">
+                                            <h3 class="mb-4" id="registration">Sign Up</h3>
+                                            <ol>
+                                                <li class="mb-3">Sign up for an account for picoCTF.org. You will
+                                                    receive a confirmation email with a verification
+                                                    link.<br/><br/>
+                                                    <a class="btn btn-info" href="https://play.picoctf.org/">
+                                                        Sign Up
+                                                    </a>
+                                                </li>
+                                                <li>Verify your account via the confirmation email.</li>
+                                            </ol>
+                                            <h3 id="get-connected">Get Connected</h3>
+
+                                            <h4 id="discord-chat">Discord Chat</h4>
+                                            <p>We welcome you to join our picoCTF community Discord server. This server
+                                                is intended for general conversation around picoCTF, team recruitment
+                                                for competitors, discussion about picoCTF open-source development, or
+                                                casual chat. This server is <strong>not</strong> intended for
+                                                competition
+                                                challenge help, and will not be monitored by problem developers.
+                                                Spoilers or flag
+                                                sharing during competition will be grounds for removal.
+                                            </p>
+
+                                            <a class="btn btn-info" href="discord.html" target="_blank">
+                                                Request Discord invite
+                                            </a>
+                                            <button class="btn btn-primary mx-auto d-block"
+                                                    onclick="studentStepper.next()"> Next
+                                            </button>
+                                        </div>
+                                        <div aria-labelledby="learner-practice-part-trigger" class="content"
+                                             id="learner-practice-part"
+                                             role="tabpanel">
+                                            <h3>picoPrimer</h3>
+                                            <p>Wonder what the shell is and how to use it? Maybe you haven’t thought
+                                                about cryptography in ages and need a refresh? Revisit concepts you
+                                                are familiar with or read something new to you in the picoPrimer.
+                                                Authored by the picoCTF education team, the picoPrimer reviews
+                                                cybersecurity principles used in our competition challenges. You do
+                                                not need any additional software to read the picoPrimer or solve the
+                                                challenges at the end of each chapter.</p>
+                                            <a class="btn btn-info mb-3"
+                                               href="https://primer.picoctf.org/">Start picoPrimer</a>
+                                            <h3>picoGym</h3>
+                                            <p>picoGym is a noncompetitive practice space where you can explore and
+                                                solve challenges from previously released picoCTF competitions, find
+                                                fresh never before revealed challenges, and build a knowledge base
+                                                of cybersecurity skills in a safe environment.</p>
+                                            <p>Whether you are a cybersecurity professional, competitive hacker or
+                                                new to CTFs you will find interesting challenges in the picoGym that
+                                                you can solve at your own pace. Team picoCTF will regularly update
+                                                this challenge repository so visit the picoGym often.</p>
+                                            <a class="btn mb-3 btn-info mb-3"
+                                               href="https://play.picoctf.org/practice">Practice in the
+                                                picoGym</a><br/>
+                                            <button class="btn btn-primary d-block mx-auto"
+                                                    onclick="studentStepper.next()">Next
+                                            </button>
+                                        </div>
+                                        <div aria-labelledby="learner-compete-part-trigger" class="content"
+                                             id="learner-compete-part" role="tabpanel">
+                                            <h3>Register for a competition</h3>
+                                            <p>picoCTF will be hosting mini-competitions and an annual US
+                                                middle/highschool competition throughout the year. Make sure you
+                                                register. You may see all upcoming competition events in your
+                                                <span class="text-bluish">competitions</span> tab once logged in to
+                                                your picoCTF.org account.</p>
+
+                                            <h3 id="teams">Teams</h3>
+                                            <p>After registering for a teamplay-enabled competition, you will have access
+                                                to the <span class="text-bluish">My Team</span> page in the top menu.
+                                                Here you may create or join a team. If you create a team, you should
+                                                share your <code>Team Invite Code</code> with potential team members.
+                                                To request approval to join a team, you must enter the correct code from
+                                                your Team Leader. You may only be on one team at a time.
+                                                After joining a team, you will no longer appear as an individual player
+                                                on any non-classroom scoreboards.
+                                            </p>
+                                            <p>Teams may consist of 1-5 players, and may consist of players at
+                                                different schools. To be eligible for prizes during competition period,
+                                                <strong>all players on a team must be eligible</strong>. See the rules
+                                                for each scoreboard regarding eligibility. If the team leader approves the
+                                                join request of a player ineligible for a certain scoreboard then the
+                                                whole team will become ineligible for that scoreboard. Team leaders
+                                                will be able to see any potential eligibilities lost before approving each join
+                                                request.</p>
+                                            <p>Team members share the same challenge instances. Team Score is calculated
+                                                from the combined challenge solve progress of all team members. Multiple
+                                                team members may solve the same challenge for their own practice and
+                                                learning, but Team Score will only be awarded once per challenge.
+                                            </p>
+                                            <p>Team Leaders may remove members of the team during the pre-registration period only.
+                                                Once the competition has begun, members can no longer leave a joined team.
+                                            </p>
+
+                                            <h3 id="classrooms">Classrooms</h3>
+
+                                            <p>Teachers, club organizers, or other groups can create a classroom to
+                                                track statistics of students’ progress. Classrooms may have multiple
+                                                teachers and will feature its own scoreboard in addition to the public
+                                                scoreboards.</p>
+
+                                            <h3 id="joining-a-classroom">Joining a Classroom</h3>
+                                            <p> You may access the <span class="text-bluish">Classrooms</span> management
+                                                page from the top menu. Here, you may request to join classrooms by
+                                                entering the correct <code class="highlighter-rouge">Classroom Invite
+                                                Code</code> obtained from your classroom leader. You will be able to
+                                                see the classroom scoreboard after your classroom leader approves your
+                                                request.</p>
+                                            <p> It is possible to join multiple classrooms — for example, one classroom
+                                                representing your student club, another classroom representing your
+                                                computer science class, as well as another classroom representing your
+                                                entire high school or school district.</p>
+                                            <h3 id="leaving-a-classroom">Leaving a Classroom</h3>
+                                            <p>You may leave a classroom from the classroom management page and clicking
+                                                the <span class="text-bluish">Leave Classroom</span> button
+                                                of the row corresponding to that class.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div aria-labelledby="nav-guide-tab" class="tab-pane fade" id="guide-teacher"
+                                 role="tabpanel">
+                                <div class="bs-stepper text-left">
+                                    <div class="bs-stepper-header mb-3" role="tablist">
+                                        <!-- your steps here -->
+                                        <div class="step" data-target="#teacher-register-part">
+                                            <button aria-controls="teacher-register" class="step-trigger"
+                                                    id="teacher-register-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">1</span>
+                                                <span class="bs-stepper-label">Get Started</span>
+                                            </button>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="step" data-target="#teacher-practice-part">
+                                            <button aria-controls="teacher-practice" class="step-trigger"
+                                                    id="teacher-practice-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">2</span>
+                                                <span class="bs-stepper-label">Create a Classroom</span>
+                                            </button>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="step" data-target="#teacher-compete-part">
+                                            <button aria-controls="teacher-compete-part" class="step-trigger"
+                                                    id="teacher-compete-part-trigger"
+                                                    role="tab" type="button">
+                                                <span class="bs-stepper-circle">3</span>
+                                                <span class="bs-stepper-label">Track Student Progress</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="bs-stepper-content">
+                                        <!-- your steps content here -->
+                                        <div aria-labelledby="teacher-compete-part-trigger" class="content"
+                                             id="teacher-register-part" role="tabpanel">
+                                            <h3 class="mb-4">Sign Up</h3>
+                                            <ol>
+                                                <li class="mb-3">Sign up for an account for picoCTF.org. You will
+                                                    receive a confirmation email with a verification
+                                                    link.<br/><br/>
+                                                    <a class="btn btn-info" href="https://play.picoctf.org/">Sign
+                                                        Up</a>
+                                                </li>
+                                                <li>Verify your account via the confirmation email.</li>
+                                            </ol>
+                                            <h3>Get Connected</h3>
+
+                                            <h4>Discord Chat</h4>
+                                            <p>We welcome you to join our picoCTF community Discord server. This server
+                                                is intended for general conversation around picoCTF, team recruitment
+                                                for competitors, discussion about picoCTF open-source development, or
+                                                casual chat. This server is <strong>not</strong> intended for
+                                                competition challenge help, and will not be monitored by problem developers.
+                                                Spoilers or flag sharing during competition will be grounds for removal.
+                                            </p>
+                                            <p>We have a dedicated <strong>#teachers-and-educators</strong> channel
+                                                to exchange ideas, share stories and collaborate in any other
+                                                manner towards teaching cybersecurity more effectively to the next generation
+                                            </p>
+                                            <a class="btn btn-info mb-3" href="discord.html"
+                                               target="_blank">
+                                                Request Discord invite
+                                            </a>
+                                            <!--
+                                            <h4>picoCTF Teachers' Forum</h4>
+                                            <p>
+                                                Join the <a href="https://teachers.picoctf.org">picoCTF Teachers and
+                                                Educators Forum</a>, a place to exchange ideas, share stories and
+                                                collaborate in any other manner towards teaching cybersecurity more
+                                                effectively to the next generation.
+                                            </p>
+                                                -->
+                                            <button class="btn mx-auto btn-primary d-block"
+                                                    onclick="teacherStepper.next()">
+                                                Next
+                                            </button>
+                                        </div>
+                                        <div aria-labelledby="teacher-practice-part-trigger" class="content"
+                                             id="teacher-practice-part"
+                                             role="tabpanel">
+                                            <p>Teachers can create a classroom to track statistics of students’
+                                                progress. Classrooms may have multiple
+                                                teachers and will feature its own scoreboards in addition to the
+                                                public event scoreboards.</p>
+                                            <h3>Create a Classroom</h3>
+                                            <p>You may create classrooms from the <span
+                                                    class="text-bluish">Classroom</span>
+                                                page from the top navigation. You will distribute the randomly
+                                                generated <code class="highlighter-rouge">Classroom Invite Code</code>
+                                                to allow your students or other teachers to request to join.</p>
+                                            <h3>User Management</h3>
+                                            <p>From your <span class="text-bluish">Classroom</span> management page, you
+                                                will be able to see the list of all active members, pending classroom
+                                                join requests, and classroom leaders. You may <strong>approve</strong>
+                                                or <strong>reject</strong> pending members. You may also <strong>remove
+                                                </strong> previously approved classroom members.
+                                            </p>
+                                            <h3>Adding Additional Leaders to a Classroom</h3>
+                                            <p>Once you have has created a classroom, other leaders may join that
+                                                classroom with the same <code class="highlighter-rouge">Classroom invite
+                                                    code
+                                                </code> Once the user has joined the classroom, they will initially
+                                                appear in the <em>Active Members</em> list, with an action button option
+                                                to <strong>Promote</strong> the user to a classroom leader.
+                                            </p>
+
+                                            <h4>Batch Registration</h4>
+
+                                            <p>Teachers may automatically generate user accounts for students, so as to
+                                                not require each to register individually. A username and password will
+                                                be created for each user, that the teacher can themselves
+                                                distribute.</p>
+                                            <p>To use this feature, click the <strong>Batch Register</strong> button
+                                                and fill out the demographic information for each set of accounts.
+                                                You must then download and save the resulting spreadsheet of logins to
+                                                distribute.</p>
+                                            <button class="btn btn-primary d-block mx-auto"
+                                                    onclick="teacherStepper.next()">
+                                                Next
+                                            </button>
+                                        </div>
+                                        <div aria-labelledby="teacher-compete-part-trigger" class="content"
+                                             id="teacher-compete-part" role="tabpanel">
+                                            <h3>Classroom stats</h3>
+                                            <p>In the <strong>Classroom</strong> page, you can view the progress of each
+                                                user that has joined your classrooms, for each event that your class
+                                                members have registered for (including the gym). You may switch between
+                                                event-specific stats from the dropdown at the top right. You can see a
+                                                graph of progress by category compared to the class average, the list of
+                                                challenge submissions.</p>
+                                            <p>Teachers may also export all members’ progress as a downloaded CSV
+                                                file.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div aria-labelledby="nav-faq-tab" class="tab-pane fade  text-left" id="nav-faq" role="tabpanel">
+                    <div class="row mt-5">
+                        <div class="col">
+                            <h2>General FAQ</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                            <div id="accordion1">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="collapseOne" aria-expanded="true"
+                                                    class="btn btn-link" data-target="#collapseOne"
+                                                    data-toggle="collapse">
+                                                What is "hacking"?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordion1"
+                                         id="collapseOne">
+                                        <div class="card-body">
+                                            <p>Hacking is all about curiosity, exploration, and deeply understanding
+                                                how something works. Most people who identify as “hackers” are
+                                                working very hard to protect people and to make technology easier
+                                                and safer to use. Unfortunately, when most people hear or read about
+                                                hacking in the news, the story is about people using hacking to do
+                                                harm, but this couldn’t be further from the truth. Career-wise,
+                                                people skilled in hacking are highly sought out by companies looking
+                                                to strengthen their cybersecurity. Computer security experts are in
+                                                very high demand today, and often are paid six-figure salaries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="collapseTwo" aria-expanded="false"
+                                                    class="btn btn-link collapsed" data-target="#collapseTwo"
+                                                    data-toggle="collapse">
+                                                What is a CTF?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordion1"
+                                         id="collapseTwo">
+                                        <div class="card-body">
+                                            <p>CTFs (short for capture the flag) are a type of computer security
+                                                competition. Contestants are presented with a set of
+                                                challenges which test their creativity, technical (and googling)
+                                                skills, and problem-solving ability. Challenges usually
+                                                cover a number of categories, and when solved, each yields a string
+                                                (called a flag) which is submitted to an online
+                                                scoring service. CTFs are a great way to learn a wide array of
+                                                computer security skills in a safe, legal environment,
+                                                and are <a href="http://ctftime.org/" rel="noopener"
+                                                           target="_blank">hosted and played by many security groups
+                                                    around the world</a> for fun and practice.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="collapseThree" aria-expanded="false"
+                                                    class="btn btn-link collapsed" data-target="#collapseThree"
+                                                    data-toggle="collapse">
+                                                What is picoCTF?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div aria-labelledby="headingThree" class="collapse" data-parent="#accordion1"
+                                         id="collapseThree">
+                                        <div class="card-body">
+                                            <p>There exist several other well-established highschool computer
+                                                security competitions, including
+                                                <a href="http://www.uscyberpatriot.org/Pages/default.aspx"
+                                                   rel="noopener" target="_blank">Cyberpatriot</a> and
+                                                <a href="http://www.uscyberchallenge.org/" rel="noopener"
+                                                   target="_blank">US Cyber Challenge</a>. These competitions focus
+                                                primarily on systems administration
+                                                fundamentals, which are very useful and marketable skills. However,
+                                                we believe the proper purpose of a high school
+                                                computer security competition is not only to teach valuable skills,
+                                                but also to get students interested in and
+                                                excited about computer science. Defensive competitions are often
+                                                laborious affairs, and come down to running checklists
+                                                and executing config scripts. Offense, on the other hand, is heavily
+                                                focused on exploration and improvisation, and
+                                                often has elements of play. We believe a competition touching on the
+                                                offensive elements of computer security is
+                                                therefore a better vehicle for ‘tech evangelism’ to students in
+                                                American high schools. Further, we believe that an
+                                                understanding of offensive techniques is essential for mounting an
+                                                effective defense, and that the
+                                                tools-and-configuration focus encountered in defensive competitions
+                                                does not lead students to ‘know their enemy’ as
+                                                effectively as teaching them to actively think like an attacker.</p>
+
+                                            <p>picoCTF is an offensively-oriented highschool computer security
+                                                competition that seeks to generate interest in computer
+                                                science among highschoolers: teaching them enough about computer
+                                                security to pique their curiosity, motivating them to
+                                                explore on their own, and enabling them to better defend their
+                                                machines.</p>
+
+                                            <p>The name of the competition follows the Plaid Parliament of Pwning’s
+                                                running tradition of using the letter P wherever possible.</p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="pico-flyers">
+                                            <h5 class="mb-0">
+                                                <button aria-controls="pico-flyers" class="btn btn-link collapsed"
+                                                        data-target="#pico-flyers-collapse"
+                                                        data-toggle="collapse">
+                                                    Is there informational material I can use to advertise this at my
+                                                    school?
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div aria-labelledby="pico-flyers" class="collapse"
+                                             data-parent="#accordion1"
+                                             id="pico-flyers-collapse">
+                                            <div class="card-body">
+                                                <p>Of course! You may download and print our <a
+                                                        href="pdfs/PicoCTF_Brochure_4_2020.pdf">brochure</a> and <a
+                                                        href="pdfs/student-flyer_v5_2021.pdf">flyer</a>. Be
+                                                    sure to write in your name and information in the blank on the flyer
+                                                    so students know who to talk to to get involved.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Student FAQ</h2>
+                            <div id="accordion2">
+                                <div class="card">
+                                    <div class="card-header" id="what-student-know">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="what-student-know" class="btn btn-link collapsed"
+                                                    data-target="#what-student-know-collapse"
+                                                    data-toggle="collapse">
+                                                What will students need to know?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="what-student-know" class="collapse"
+                                         data-parent="#accordion2"
+                                         id="what-student-know-collapse">
+                                        <div class="card-body">
+                                            <p>Minimally: how to think critically. Some familiarity with
+                                                programming will be helpful, but many past participants of picoCTF
+                                                have played with no programming experience and learned some
+                                                programming along the way. Exposure to Python, HTML, JavaScript, and
+                                                C (though Java syntax is close enough for this purpose) is ideal,
+                                                but in no way required.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="what-software">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="what-software-collapse"
+                                                    class="btn btn-link collapsed" data-target="#what-software-collapse"
+                                                    data-toggle="collapse">
+                                                What software do students need?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="what-software" class="collapse"
+                                         data-parent="#accordion2" id="what-software-collapse">
+                                        <div class="card-body">
+                                            <p>Many challenges can be solved using only a web browser and the provided webshell,
+                                                but some may require additional tools.
+                                            </p>
+                                            <p>
+                                                Players are free to use any desired tools in order to solve challenges.
+                                            </p>
+                                            <p>
+                                                Network administrators may need to allowlist certain domains and port ranges in order for players to access picoCTF challenges.</p>
+                                            <strong>picoCTF domains and port ranges:</strong>
+                                            <ul>
+                                                <li><code class="highlighter-rouge">picoctf.org (443)</code></li>
+                                                <li><code class="highlighter-rouge">play.picoctf.org (443)</code></li>
+                                                <li><code class="highlighter-rouge">webshell.picoctf.org (443)</code></li>
+                                                <li><code class="highlighter-rouge">artifacts.picoctf.net (443)</code></li>
+                                                <li><code class="highlighter-rouge">jupiter.challenges.picoctf.org (443, 1024-65535)</code></li>
+                                                <li><code class="highlighter-rouge">jupiter.picoctf.net (443, 1024-65535)</code></li>
+                                                <li><code class="highlighter-rouge">mercury.picoctf.net (443, 1024-65535)</code></li>
+                                                <li><code class="highlighter-rouge">venus.picoctf.net (443, 1024-65535)</code></li>
+                                                <li><code class="highlighter-rouge">mars.picoctf.net (443, 1024-65535)</code></li>
+                                                <li><code class="highlighter-rouge">saturn.picoctf.net (49152-65535)</code></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="can-college-play">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="can-college-play" class="btn btn-link collapsed"
+                                                    data-target="#can-college-play-collapse"
+                                                    data-toggle="collapse">
+                                                As a college student / non-student, can I play too?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="what-student-know" class="collapse"
+                                         data-parent="#accordion2"
+                                         id="can-college-play-collapse">
+                                        <div class="card-body">
+                                            <p>Absolutely! Everyone is welcome. Depending on the competition,
+                                                certain criteria such as US middle and high school enrollment is
+                                                required for prizes, but we encourage teachers (and others!) to
+                                                play.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="how-much-time">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="can-college-play" class="btn btn-link collapsed"
+                                                    data-target="#how-much-time-collapse"
+                                                    data-toggle="collapse">
+                                                How much time should I allocate? Do students have to work at particular
+                                                times?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="how-much-time" class="collapse"
+                                         data-parent="#accordion2"
+                                         id="how-much-time-collapse">
+                                        <div class="card-body">
+                                            <p>We have a range of challenge difficulties. Students will be able to log
+                                                in at any time and spend as much or as little time as they like during
+                                                the competition period. Outside of the competition period, challenges
+                                                are available in the picoGym to practice at any desired pace.
+                                            <p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="student-teams">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="student-teams" class="btn btn-link collapsed"
+                                                    data-target="#student-teams-collapse"
+                                                    data-toggle="collapse">
+                                                Do student compete individually or in teams?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="student-teams" class="collapse"
+                                         data-parent="#accordion2"
+                                         id="student-teams-collapse">
+                                        <div class="card-body">
+                                            <p>Each student will register individually. Afterwards, they can compete
+                                                individually or form teams of up to 5 members.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h2>Teacher FAQ</h2>
+                            <div id="accordion3">
+
+                                <div class="card">
+                                    <div class="card-header" id="teacher-role">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="teacher-role" class="btn btn-link collapsed"
+                                                    data-target="#teacher-role-collapse"
+                                                    data-toggle="collapse">
+                                                What is the role of the teacher in competitions?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="teacher-role" class="collapse"
+                                         data-parent="#accordion3"
+                                         id="teacher-role-collapse">
+                                        <div class="card-body">
+                                            <p>During competitions, our hope is that teacher sponsors will act primarily
+                                                in a facilitator role, rather than a mentoring role. But we encourage
+                                                teachers to help students with picoCTF in whatever way they see fit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div class="card-header" id="teacher-play">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="pico-flyers" class="btn btn-link collapsed"
+                                                    data-target="#teacher-play-collapse"
+                                                    data-toggle="collapse">
+                                                As a teacher, can I play too?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="teacher-play" class="collapse"
+                                         data-parent="#accordion3"
+                                         id="teacher-play-collapse">
+                                        <div class="card-body">
+                                            <p>Absolutely! Everyone is welcome. However, we recommend that you do not directly join your students'
+                                                team during the competition, as this may cause them to become ineligible for prizes (for example, all team members
+                                                must be students in order for the team to appear on a student scoreboard and be eligible for its prize pool).
+                                                We recommend instead using the classroom
+                                                feature to track your students' progress.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div class="card-header" id="how-track">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="pico-flyers" class="btn btn-link collapsed"
+                                                    data-target="#how-track-collapse"
+                                                    data-toggle="collapse">
+                                                How can I keep track of how my students are doing?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="how-track" class="collapse"
+                                         data-parent="#accordion3"
+                                         id="how-track-collapse">
+                                        <div class="card-body">
+                                            <p>You can create a classroom and invite your students to join it. In your
+                                                classroom dashboard, you will be able to see individual and aggregate
+                                                progress stats. In addition, the scoreboard page will show a separate
+                                                ranking of just your classroom members, alongside the existing public
+                                                scoreboards. You may also export a a complete CSV of student stats. See
+                                                the teacher User-Guide for more information on this feature.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div class="card-header" id="teacher-forum">
+                                        <h5 class="mb-0">
+                                            <button aria-controls="pico-flyers" class="btn btn-link collapsed"
+                                                    data-target="#teacher-forum-collapse"
+                                                    data-toggle="collapse">
+                                                I’m still a bit confused…
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div aria-labelledby="teacher-forum" class="collapse"
+                                         data-parent="#accordion3"
+                                         id="teacher-forum-collapse">
+                                        <div class="card-body">
+                                            <p>No problem! Feel free to <a href="mailto:educator@picoctf.org">contact
+                                                us</a> and we would be happy to clarify anything for you.</p>
+                                            <p>We also invite you to join our <a href="discord.html" target="_blank">
+                                                Discord server's <strong>#teachers-and-educators</strong>
+                                                channel</a>,  a place to exchange ideas, share
+                                                stories and collaborate in any other manner towards teaching
+                                                cyber-security more effectively to the next generation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        window.studentStepper = new Stepper($('.bs-stepper')[0], {
+            linear: false,
+        });
+        window.teacherStepper = new Stepper($('.bs-stepper')[1], {
+            linear: false,
+        });
+        showHashTab();
+    });
+</script>
+
+
+        
+    </div>
+
+    <footer id="footer" class="">
+    
+    <div class="container section text-center">
+        <div class="row">
+            <div class="col" id="footer-content">
+                <div>
+                    <a href="https://cmu.edu/" target="_blank" rel="noopener"><img alt="CMU Logo" height="64" width="102" src="img/logos/cmu.png"></a>
+                    <a href="https://ini.cmu.edu/"  target="_blank" rel="noopener"><img alt="INI Logo"  height="64" width="248" src="img/logos/ini.png"></a>
+                    <a href="https://cylab.cmu.edu/" target="_blank" rel="noopener"><img alt="CyLab Logo"  height="64" width="114" src="img/logos/cylab.png"></a>
+                    <a href="http://pwning.net/" target="_blank" rel="noopener"><img alt="PPP Logo"  height="64" width="64" src="img/logos/ppp.png"></a>
+                </div>
+                <div>
+                    <a href="https://facebook.com/picoctf.competition" target="_blank" rel="noopener"><img width="50"  height="50" alt="Facebook logo" src="img/logos/facebook.png"></a>
+                    <a href="https://twitter.com/picoctf" target="_blank" rel="noopener"><img width="50"  height="50" alt="Twitter logo"  src="img/logos/twitter.png"></a>
+                    <a href="discord.html" target="_blank" rel="noopener"><img width="50"  height="50" alt="Discord logo"  src="img/logos/discord.png"></a>
+                </div>
+                <div>
+                    <h5>© Carnegie Mellon University 2023<br/>
+                        Use of this site is governed by the <a href="privacy.html">Privacy Statement</a> and <a href="terms.html">Terms
+                            of Service</a>.<br/>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer> <!-- footer -->
+<script src="js/script.js"></script>
+
+</div>
+</body>
+
+<!-- Mirrored from picoctf.org/get_started.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Apr 2024 13:19:54 GMT -->
+</html>
